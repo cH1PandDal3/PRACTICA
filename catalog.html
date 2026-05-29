@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Каталог — ЯроSpot</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">ЯS</span>
+        <span>ЯроSpot</span>
+      </a>
+      <button class="burger" aria-label="Меню">☰</button>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html" class="active">Каталог</a>
+        <a href="team.html">Поиск команды</a>
+        <a href="#" class="btn btn-primary btn-sm nav__cta" data-open-modal data-modal-title="Оставить заявку">Оставить заявку</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <h1>Каталог одежды на аренду</h1>
+      <p>Подобранные образы от партнёрских шоурумов: вечерние, повседневные, костюмы и аутфиты под съёмку. Цена указана за сутки аренды.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="filters" data-filter-group="catalog">
+      <button class="filter-chip active" data-filter="all">Все</button>
+      <button class="filter-chip" data-filter="dress">Платья</button>
+      <button class="filter-chip" data-filter="suit">Костюмы</button>
+      <button class="filter-chip" data-filter="top">Верх</button>
+      <button class="filter-chip" data-filter="bottom">Низ</button>
+      <button class="filter-chip" data-filter="outerwear">Верхняя одежда</button>
+    </div>
+
+    <div class="catalog-grid">
+      <article class="product" data-category="dress">
+        <img class="product__image" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80" alt="Вечернее платье" />
+        <div class="product__body">
+          <div class="product__category">Платье</div>
+          <h3 class="product__title">Вечернее платье «Marsala»</h3>
+          <p class="product__desc">Длинное платье из шёлка-сатина бордового оттенка. Размеры S–L.</p>
+          <div class="product__footer">
+            <div class="product__price">2 500 ₽ <span>/ сутки</span></div>
+            <button class="btn btn-accent btn-sm" data-open-modal data-modal-title="Арендовать «Marsala»">Арендовать</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-category="suit">
+        <img class="product__image" src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0?auto=format&fit=crop&w=600&q=80" alt="Тёмно-синий костюм" />
+        <div class="product__body">
+          <div class="product__category">Костюм</div>
+          <h3 class="product__title">Костюм-двойка «Navy Classic»</h3>
+          <p class="product__desc">Шерстяной костюм глубокого тёмно-синего цвета. Размеры 46–54.</p>
+          <div class="product__footer">
+            <div class="product__price">3 200 ₽ <span>/ сутки</span></div>
+            <button class="btn btn-accent btn-sm" data-open-modal data-modal-title="Арендовать «Navy Classic»">Арендовать</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-category="top">
+        <img class="product__image" src="https://images.unsplash.com/photo-1485518882345-15568b007407?auto=format&fit=crop&w=600&q=80" alt="Шёлковая блуза" />
+        <div class="product__body">
+          <div class="product__category">Верх</div>
+          <h3 class="product__title">Шёлковая блуза «Cream»</h3>
+          <p class="product__desc">Молочный оттенок, свободный крой, отлично сидит на любом типе фигуры.</p>
+          <div class="product__footer">
+            <div class="product__price">1 400 ₽ <span>/ сутки</span></div>
+            <button class="btn btn-accent btn-sm" data-open-modal data-modal-title="Арендовать «Cream»">Арендовать</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-category="dress">
+        <img class="product__image" src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=600&q=80" alt="Чёрное коктейльное платье" />
+        <div class="product__body">
+          <div class="product__category">Платье</div>
+          <h3 class="product__title">Коктейльное платье «Noir»</h3>
+          <p class="product__desc">Облегающее чёрное платье длины миди. Универсальное для вечерних съёмок.</p>
+          <div class="product__footer">
+            <div class="product__price">1 800 ₽ <span>/ сутки</span></div>
+            <button class="btn btn-accent btn-sm" data-open-modal data-modal-title="Арендовать «Noir»">Арендовать</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-category="outerwear">
+        <img class="product__image" src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=600&q=80" alt="Бежевое пальто" />
+        <div class="product__body">
+          <div class="product__category">Верхняя одежда</div>
+          <h3 class="product__title">Пальто-оверсайз «Camel»</h3>
+          <p class="product__desc">Прямой крой, кашемир-шерсть. Идеально для уличных портретов.</p>
+          <div class="product__footer">
+            <div class="product__price">2 100 ₽ <span>/ сутки</span></div>
+            <button class="btn btn-accent btn-sm" data-open-modal data-modal-title="Арендовать «Camel»">Арендовать</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-category="bottom">
+        <img class="product__image" src="https://images.unsplash.com/photo-1551803091-e20673f15770?auto=format&fit=crop&w=600&q=80" alt="Прямые брюки" />
+        <div class="product__body">
+          <div class="product__category">Низ</div>
+          <h3 class="product__title">Брюки прямые «Bordo»</h3>
+          <p class="product__desc">Бордовые брюки из плотной костюмной ткани. Размеры 42–48.</p>
+          <div class="product__footer">
+            <div class="product__price">1 200 ₽ <span>/ сутки</span></div>
+            <button class="btn btn-accent btn-sm" data-open-modal data-modal-title="Арендовать «Bordo»">Арендовать</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-category="suit">
+        <img class="product__image" src="https://images.unsplash.com/photo-1507680434567-5739c80be1ac?auto=format&fit=crop&w=600&q=80" alt="Брючный костюм" />
+        <div class="product__body">
+          <div class="product__category">Костюм</div>
+          <h3 class="product__title">Брючный костюм «Smoky»</h3>
+          <p class="product__desc">Дымчатый серо-синий, женская модель с приталенным жакетом.</p>
+          <div class="product__footer">
+            <div class="product__price">2 800 ₽ <span>/ сутки</span></div>
+            <button class="btn btn-accent btn-sm" data-open-modal data-modal-title="Арендовать «Smoky»">Арендовать</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-category="top">
+        <img class="product__image" src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=600&q=80" alt="Свитер крупной вязки" />
+        <div class="product__body">
+          <div class="product__category">Верх</div>
+          <h3 class="product__title">Свитер «Knit Wool»</h3>
+          <p class="product__desc">Крупная вязка, цвет «топлёное молоко». Зимние портреты, уличные локации.</p>
+          <div class="product__footer">
+            <div class="product__price">900 ₽ <span>/ сутки</span></div>
+            <button class="btn btn-accent btn-sm" data-open-modal data-modal-title="Арендовать «Knit Wool»">Арендовать</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-category="outerwear">
+        <img class="product__image" src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=600&q=80" alt="Кожаная куртка" />
+        <div class="product__body">
+          <div class="product__category">Верхняя одежда</div>
+          <h3 class="product__title">Кожаная куртка «Rider»</h3>
+          <p class="product__desc">Классическая чёрная косуха. Подходит для дерзких съёмок в студии.</p>
+          <div class="product__footer">
+            <div class="product__price">1 600 ₽ <span>/ сутки</span></div>
+            <button class="btn btn-accent btn-sm" data-open-modal data-modal-title="Арендовать «Rider»">Арендовать</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <div class="brand" style="color:#fff; margin-bottom:10px;">
+            <span class="brand__mark">ЯS</span>
+            <span style="color:#fff;">ЯроSpot</span>
+          </div>
+          <p style="color:#8a96a6; margin:0;">Сервис аренды одежды и поиска команды для съёмок. Проект студенческой работы.</p>
+        </div>
+        <div>
+          <h4>Разделы</h4>
+          <a href="index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="team.html">Поиск команды</a>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <a href="mailto:hello@yaraspot.app">hello@yaraspot.app</a>
+          <a href="tel:+74950000000">+7 495 000-00-00</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>© 2026 ЯроSpot. Учебный проект.</span>
+        <span>Сделано с заботой к деталям</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="applyModal" aria-hidden="true">
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="applyTitle">
+      <button class="modal__close" data-close-modal aria-label="Закрыть">×</button>
+      <h3 class="modal__title" id="applyTitle">Оставить заявку</h3>
+      <p class="modal__lead">Заполните форму — мы свяжемся в течение рабочего дня.</p>
+
+      <form id="applyForm">
+        <div class="form-field">
+          <label for="apply-name">Имя</label>
+          <input type="text" id="apply-name" required placeholder="Как к вам обращаться" />
+        </div>
+        <div class="form-field">
+          <label for="apply-phone">Телефон</label>
+          <input type="tel" id="apply-phone" required placeholder="+7 ___ ___-__-__" />
+        </div>
+        <div class="form-field">
+          <label for="apply-message">Комментарий</label>
+          <textarea id="apply-message" placeholder="Коротко о проекте или вопросе"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Отправить</button>
+      </form>
+
+      <div id="applySuccess" class="modal__success hidden">
+        <div class="modal__success__icon">✓</div>
+        <h3>Спасибо, мы свяжемся!</h3>
+        <p>Заявка принята. Проверьте телефон — наш менеджер позвонит в ближайшее время.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

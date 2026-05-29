@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Поиск команды — ЯроSpot</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">ЯS</span>
+        <span>ЯроSpot</span>
+      </a>
+      <button class="burger" aria-label="Меню">☰</button>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="team.html" class="active">Поиск команды</a>
+        <a href="#" class="btn btn-primary btn-sm nav__cta" data-open-modal data-modal-title="Оставить заявку">Оставить заявку</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <h1>Поиск команды: операторы и модели</h1>
+      <p>Свежие объявления: операторы и фотографы ищут моделей для проектов, модели предлагают сотрудничество. Откликайтесь напрямую — без посредников.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="filters" data-filter-group="team">
+      <button class="filter-chip active" data-filter="all">Все объявления</button>
+      <button class="filter-chip" data-filter="operator">Операторы ищут моделей</button>
+      <button class="filter-chip" data-filter="model">Модели ищут операторов</button>
+    </div>
+
+    <div class="ads-grid">
+      <article class="ad" data-role="operator">
+        <div class="ad__avatar">АК</div>
+        <div class="ad__body">
+          <div class="ad__head">
+            <span class="ad__name">Антон Кузнецов</span>
+            <span class="badge badge--operator">Оператор</span>
+          </div>
+          <div class="ad__meta">Москва · Студийная съёмка · 4 года опыта</div>
+          <p class="ad__text">Ищу модель на коммерческую съёмку для бренда одежды. Снимаем 2 дня в студии «Loft 32», нужен опыт работы с лукбуками.</p>
+          <div class="ad__footer">
+            <span class="ad__rate">от 8 000 ₽ / день</span>
+            <button class="btn btn-outline btn-sm" data-open-modal data-modal-title="Откликнуться: Антон Кузнецов">Откликнуться</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="ad" data-role="model">
+        <div class="ad__avatar">МС</div>
+        <div class="ad__body">
+          <div class="ad__head">
+            <span class="ad__name">Мария Степанова</span>
+            <span class="badge badge--model">Модель</span>
+          </div>
+          <div class="ad__meta">Санкт-Петербург · Fashion / Beauty · Рост 178</div>
+          <p class="ad__text">Готова к сотрудничеству с фотографами и видеографами. Есть портфолио, опыт показов. Открыта к лукбукам, бьюти-проектам и тестам.</p>
+          <div class="ad__footer">
+            <span class="ad__rate">TFP / по договорённости</span>
+            <button class="btn btn-outline btn-sm" data-open-modal data-modal-title="Откликнуться: Мария Степанова">Откликнуться</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="ad" data-role="operator">
+        <div class="ad__avatar">ДВ</div>
+        <div class="ad__body">
+          <div class="ad__head">
+            <span class="ad__name">Дмитрий Власов</span>
+            <span class="badge badge--operator">Оператор</span>
+          </div>
+          <div class="ad__meta">Москва · Видеосъёмка · Reels / Имидж-ролики</div>
+          <p class="ad__text">Снимаю серию имидж-роликов для шоурума. Нужна модель с уверенной пластикой и опытом работы перед камерой. Дата — суббота.</p>
+          <div class="ad__footer">
+            <span class="ad__rate">10 000 ₽ / смена</span>
+            <button class="btn btn-outline btn-sm" data-open-modal data-modal-title="Откликнуться: Дмитрий Власов">Откликнуться</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="ad" data-role="model">
+        <div class="ad__avatar">ЕЛ</div>
+        <div class="ad__body">
+          <div class="ad__head">
+            <span class="ad__name">Елизавета Львова</span>
+            <span class="badge badge--model">Модель</span>
+          </div>
+          <div class="ad__meta">Москва · Editorial / Портрет · Рост 172</div>
+          <p class="ad__text">Ищу фотографа для съёмки эстетичного портфолио — нужны 3–4 образа в одной локации. Готова обсудить TFP или оплату.</p>
+          <div class="ad__footer">
+            <span class="ad__rate">TFP / 3 000 ₽</span>
+            <button class="btn btn-outline btn-sm" data-open-modal data-modal-title="Откликнуться: Елизавета Львова">Откликнуться</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="ad" data-role="operator">
+        <div class="ad__avatar">ИП</div>
+        <div class="ad__body">
+          <div class="ad__head">
+            <span class="ad__name">Игорь Петров</span>
+            <span class="badge badge--operator">Оператор</span>
+          </div>
+          <div class="ad__meta">Казань · Fashion-фотограф · 7 лет опыта</div>
+          <p class="ad__text">Набираю кастинг моделей на серию редакционных съёмок. Интересны нестандартные типажи. Локации — центр Казани, лофт.</p>
+          <div class="ad__footer">
+            <span class="ad__rate">от 6 000 ₽ / день</span>
+            <button class="btn btn-outline btn-sm" data-open-modal data-modal-title="Откликнуться: Игорь Петров">Откликнуться</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="ad" data-role="model">
+        <div class="ad__avatar">АС</div>
+        <div class="ad__body">
+          <div class="ad__head">
+            <span class="ad__name">Алиса Соколова</span>
+            <span class="badge badge--model">Модель</span>
+          </div>
+          <div class="ad__meta">Москва · Commercial · Рост 170</div>
+          <p class="ad__text">Свободна по будням во второй половине дня. Опыт работы с локальными брендами одежды и украшений. Есть карточка модели.</p>
+          <div class="ad__footer">
+            <span class="ad__rate">от 5 000 ₽ / смена</span>
+            <button class="btn btn-outline btn-sm" data-open-modal data-modal-title="Откликнуться: Алиса Соколова">Откликнуться</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="ad" data-role="operator">
+        <div class="ad__avatar">СН</div>
+        <div class="ad__body">
+          <div class="ad__head">
+            <span class="ad__name">Сергей Назаров</span>
+            <span class="badge badge--operator">Оператор</span>
+          </div>
+          <div class="ad__meta">Екатеринбург · Street / Lifestyle</div>
+          <p class="ad__text">Запускаю съёмку для уличного бренда: верхняя одежда, аксессуары. Нужна модель в стиле «городской минимализм». Локации согласуем.</p>
+          <div class="ad__footer">
+            <span class="ad__rate">по итогам кастинга</span>
+            <button class="btn btn-outline btn-sm" data-open-modal data-modal-title="Откликнуться: Сергей Назаров">Откликнуться</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="ad" data-role="model">
+        <div class="ad__avatar">КМ</div>
+        <div class="ad__body">
+          <div class="ad__head">
+            <span class="ad__name">Кирилл Морозов</span>
+            <span class="badge badge--model">Модель</span>
+          </div>
+          <div class="ad__meta">Санкт-Петербург · Мужская модель · Рост 186</div>
+          <p class="ad__text">Открыт к работе с операторами и брендами. Есть опыт в каталожной съёмке и видео. Возьмусь за съёмки в СПб и Москве.</p>
+          <div class="ad__footer">
+            <span class="ad__rate">от 7 000 ₽ / смена</span>
+            <button class="btn btn-outline btn-sm" data-open-modal data-modal-title="Откликнуться: Кирилл Морозов">Откликнуться</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <div class="brand" style="color:#fff; margin-bottom:10px;">
+            <span class="brand__mark">ЯS</span>
+            <span style="color:#fff;">ЯроSpot</span>
+          </div>
+          <p style="color:#8a96a6; margin:0;">Сервис аренды одежды и поиска команды для съёмок. Проект студенческой работы.</p>
+        </div>
+        <div>
+          <h4>Разделы</h4>
+          <a href="index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="team.html">Поиск команды</a>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <a href="mailto:hello@yaraspot.app">hello@yaraspot.app</a>
+          <a href="tel:+74950000000">+7 495 000-00-00</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>© 2026 ЯроSpot. Учебный проект.</span>
+        <span>Сделано с заботой к деталям</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="applyModal" aria-hidden="true">
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="applyTitle">
+      <button class="modal__close" data-close-modal aria-label="Закрыть">×</button>
+      <h3 class="modal__title" id="applyTitle">Оставить заявку</h3>
+      <p class="modal__lead">Заполните форму — мы свяжемся в течение рабочего дня.</p>
+
+      <form id="applyForm">
+        <div class="form-field">
+          <label for="apply-name">Имя</label>
+          <input type="text" id="apply-name" required placeholder="Как к вам обращаться" />
+        </div>
+        <div class="form-field">
+          <label for="apply-phone">Телефон</label>
+          <input type="tel" id="apply-phone" required placeholder="+7 ___ ___-__-__" />
+        </div>
+        <div class="form-field">
+          <label for="apply-message">Комментарий</label>
+          <textarea id="apply-message" placeholder="Коротко о проекте или вопросе"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Отправить</button>
+      </form>
+
+      <div id="applySuccess" class="modal__success hidden">
+        <div class="modal__success__icon">✓</div>
+        <h3>Спасибо, мы свяжемся!</h3>
+        <p>Заявка принята. Проверьте телефон — наш менеджер позвонит в ближайшее время.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
